@@ -1,0 +1,172 @@
+/* ====== Reset & Base ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('../images/background2.jpg') no-repeat center center/cover;
+  color: #333;
+  min-height: 100vh;
+  line-height: 1.7;
+}
+
+/* ====== Typography ====== */
+h1, h2, h3 {
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+p, label {
+  color: #555;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #005b99;
+}
+
+/* ====== Navigation – Neumorphic Bar ====== */
+.neu-nav {
+  background: #e0e5ec;
+  padding: 1rem;
+  box-shadow: inset 4px 4px 10px #c8cfd6, inset -4px -4px 10px #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.neu-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.neu-nav a {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: #e0e5ec;
+  box-shadow: 4px 4px 10px #c8cfd6, -4px -4px 10px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.neu-nav a.active,
+.neu-nav a:hover {
+  background: #d1d9e6;
+  color: #007acc;
+}
+
+/* ====== Hero Section – Glass + Neu Combo ====== */
+.hero-combo {
+  height: 100vh;
+  background: url('../images/bg.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.neu-card.glass-card {
+  max-width: 600px;
+  padding: 2.5rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow:
+    inset 4px 4px 10px rgba(255, 255, 255, 0.2),
+    8px 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  text-align: center;
+}
+
+.btn-glass {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background: rgba(0, 128, 255, 0.25);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+  backdrop-filter: blur(8px);
+  transition: background 0.3s;
+}
+
+.btn-glass:hover {
+  background: rgba(0, 128, 255, 0.5);
+}
+
+/* ====== Sections – Glass Cards with Neu Touch ====== */
+main {
+  padding: 2rem;
+}
+
+.neu-section {
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow:
+    6px 6px 16px rgba(0, 0, 0, 0.1),
+    -6px -6px 16px rgba(255, 255, 255, 0.3);
+  max-width: 900px;
+}
+
+/* ====== Image Map and Iframe Styling ====== */
+.neu-section img,
+iframe {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* ====== Footer ====== */
+.neu-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #e0e5ec;
+  box-shadow: inset 4px 4px 10px #c8cfd6, inset -4px -4px 10px #ffffff;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  color: #444;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .hero-combo h1 {
+    font-size: 2rem;
+  }
+
+  .neu-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.dark-theme {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.dark-theme .neu-nav,
+.dark-theme .neu-footer,
+.dark-theme .neu-section {
+  background: #1e1e1e;
+  box-shadow: inset 2px 2px 6px #111, inset -2px -2px 6px #333;
+}
+
+.dark-theme a {
+  color: #66ccff;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Kareem Joseph Mkiya" />
+  <meta name="author" content="Kareem Joseph Mkiya" />
+  <title>Kareem | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body onload="greetUser()">
+  <nav class="neu-nav">
+    <ul>
+      <li><button id="toggleTheme" class="btn-glass" style="margin: 1rem;">Toggle Theme</button>
+      </li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="survey.html">Survey</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero-combo">
+    <div class="neu-card glass-card">
+      <h1>Hi, I'm Kareem</h1>
+      <p>Web Developer | UI Designer | Explorer</p>
+      <a href="portfolio.html" class="btn-glass">See My Projects</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="neu-section glass-card">
+      <h2>Explore My World</h2>
+      <img src="images/mapp.png" usemap="#places" alt="Interactive Map" width="600" />
+      <map name="places">
+        <area shape="circle" coords="300,200,50" alt="Arusha" href="https://en.wikipedia.org/wiki/Arusha" target="_blank" />
+        <area shape="rect" coords="50,100,250,250" alt="Tanga" href="https://en.wikipedia.org/wiki/Tanga,_Tanzania" target="_blank" />
+      </map>
+    </section>
+
+    <section class="neu-section glass-card">
+      <h2>Intro Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/beJ8fDbX9vs?autoplay=1&mute=1" title="UI Inspiration" frameborder="0" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer class="neu-footer">
+    <p>&copy; 2025 Kareem Joseph Mkiya</p>
+  </footer>
+</body>
+</html>

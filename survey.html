@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey | Kareem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="neu-nav">
+    <ul>
+      <li><button id="toggleTheme" class="btn-glass" style="margin: 1rem;">Toggle Theme</button>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="survey.html" class="active">Survey</a></li>
+    </ul>
+  </nav>
+
+  <main class="neu-section">
+    <h2>Quick Survey</h2>
+    <form>
+      <label>Where did you hear about this site?</label>
+      <input type="radio" name="source" id="google"><label for="google">Google</label><br />
+      <input type="radio" name="source" id="social"><label for="social">Social Media</label><br />
+      <input type="radio" name="source" id="friend"><label for="friend">From a Friend</label><br /><br />
+
+      <label>What are you interested in?</label><br />
+      <input type="checkbox" id="webdev"><label for="webdev">Web Development</label><br />
+      <input type="checkbox" id="design"><label for="design">UI/UX Design</label><br />
+      <input type="checkbox" id="consult"><label for="consult">Consultation</label><br /><br />
+
+      <label for="feedback">Suggestions or Feedback:</label><br />
+      <textarea id="feedback" rows="4"></textarea><br />
+
+      <button type="submit">Submit Survey</button>
+    </form>
+  </main>
+
+  <footer class="neu-footer">
+    <p>&copy; 2025 Kareem Joseph Mkiya</p>
+  </footer>
+</body>
+</html>
